@@ -31,12 +31,13 @@ p {
 #main-content {
     background-color: #7FFFD4;
     height: 600px;
+    padding-top: 50px;
 }
 
 /* Utils */
 
 .container {
-    max-width: 1200px;
+    max-width: 850px;
     margin: 0 auto;
 }
 
@@ -53,5 +54,22 @@ header {
     display: flex;
     align-items: center;
     
+}
+
+#grids {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid {
+    height: 90px;
+    width: 90px;
+    border: 1px black solid;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1.5rem;
 }
 
