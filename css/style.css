@@ -60,8 +60,8 @@ header {
     display: flex;
     flex-wrap: wrap;
     margin: 50px auto;
-    width: 850px;
-    height: 850px;
+    width: 900px;
+    height: 900px;
 }
 
 .grid {
