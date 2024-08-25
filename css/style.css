@@ -30,14 +30,14 @@ p {
 
 #main-content {
     background-color: #7FFFD4;
-    height: 600px;
     padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 /* Utils */
 
 .container {
-    max-width: 850px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -59,12 +59,16 @@ header {
 #grids {
     display: flex;
     flex-wrap: wrap;
+    margin: 50px auto;
+    width: 850px;
+    height: 850px;
 }
 
 .grid {
-    height: 90px;
-    width: 90px;
+    height: calc(100% / 9);
+    flex-basis: calc(100% / 9);
     border: 1px black solid;
+    cursor: pointer;
     color: black;
     display: flex;
     justify-content: center;
