@@ -20,6 +20,7 @@ const grids = document.getElementById('grids')
 
 //* IMPOSTAZIONI INIZIALI
 
+// (PER BONUS)
 const rows = 9;
 const cols = 9;
 const totalGrids = rows + cols;
@@ -30,10 +31,18 @@ button.addEventListener('click' , function (){
     // ! Blocco l'evento 
     event.preventDefault();
 
+    button.innerText = 'Ricomincia';
+
     // Creo le celle
     
-    for( let i = 0; i < totalGrids; i++){
+    for( let i = 0; i < 100; i++){
         const grid = createGrid(i + 1);
         grids.appendChild(grid);
-    }
+
+    grid.addEventListener('click', function (){
+        console.log(i + 1)
+        grid.classList.add('active')
+        
+    })
+}
 })
